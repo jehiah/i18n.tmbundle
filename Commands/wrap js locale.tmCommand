@@ -19,7 +19,7 @@ echo -n " $._(\"${TXT}\")"</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>scope</key>
-	<string>source.prototype.js</string>
+	<string>source.js</string>
 	<key>uuid</key>
 	<string>2489DEE7-8920-492B-90B7-6EA8E069D1C1</string>
 </dict>
