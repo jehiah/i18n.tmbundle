@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># wrap in a $._() translation block
+
+TXT=$(echo $TM_SELECTED_TEXT | sed -e 's/^"//g' -e 's/"$//g');
+TXT=$(echo $TXT | sed -e "s/^'//g" -e "s/'$//g");
+echo -n " $._(\"${TXT}\")"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^l</string>
+	<key>name</key>
+	<string>wrap js locale</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.prototype.js</string>
+	<key>uuid</key>
+	<string>2489DEE7-8920-492B-90B7-6EA8E069D1C1</string>
+</dict>
+</plist>
